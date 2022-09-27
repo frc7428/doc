@@ -28,6 +28,6 @@ jobs:
       - name: Publish package
         uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
         with:
-          arguments: -Pversion=$MAJOR_VERSION.$MINOR_VERSION.$GITHUB_RUN_ATTEMPT publish
+          arguments: -PprojVersion=$MAJOR_VERSION.$MINOR_VERSION.$GITHUB_RUN_ATTEMPT publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
