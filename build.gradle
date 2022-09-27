@@ -97,6 +97,9 @@ publishing {
       artifactId = 'doc'
       version = project.version
       from components.java
+      pom {
+        description = "A shared library for FRC 7428"
+      }
     }
   }
   repositories {
