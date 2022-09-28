@@ -6,7 +6,7 @@ Doc is a shared library for FRC 7428.
 
 First, you must make sure your robot project has the following dependencies:
 - Phoenix (CTRE)
-- REVLib version
+- REVLib
 - WPILibNewCommands
 
 With those vendor dependencies added to your project, you can add `doc` to it.
