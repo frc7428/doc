@@ -82,8 +82,7 @@ wpi.sim.addDriverstation()
 // knows where to look for our Robot Class.
 jar {
     from { 
-      configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } 
-      configurations.implementation.collect { it.isDirectory() ? it : zipTree(it) }
+      configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) }
     }
     duplicatesStrategy = DuplicatesStrategy.INCLUDE
 }
