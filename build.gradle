@@ -92,6 +92,10 @@ deployArtifact.jarTask = jar
 wpi.java.configureExecutableTasks(jar)
 wpi.java.configureTestTasks(test)
 
+java {
+	  withJavadocJar()
+}
+
 publishing {
   publications {
     mavenJava(MavenPublication) {
