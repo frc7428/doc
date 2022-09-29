@@ -25,4 +25,13 @@ public class Falcon {
     public void set(double scaledOutput) {
         mTalon.set(scaledOutput);
     }
+
+    /**
+     * Reports the inversion status of the motor controller.
+     * 
+     * @return true for inverted
+     */
+    public boolean isInverted() {
+        return mTalon.getInverted();
+    }
 }
